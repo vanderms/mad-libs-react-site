@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mad-libs-react-site/static/css/main.5a0bcc32.chunk.css",
+    "main.js": "/mad-libs-react-site/static/js/main.05332760.chunk.js",
+    "main.js.map": "/mad-libs-react-site/static/js/main.05332760.chunk.js.map",
+    "runtime-main.js": "/mad-libs-react-site/static/js/runtime-main.dc6c8d0f.js",
+    "runtime-main.js.map": "/mad-libs-react-site/static/js/runtime-main.dc6c8d0f.js.map",
+    "static/js/2.51aded27.chunk.js": "/mad-libs-react-site/static/js/2.51aded27.chunk.js",
+    "static/js/2.51aded27.chunk.js.map": "/mad-libs-react-site/static/js/2.51aded27.chunk.js.map",
+    "static/js/3.6f8a43d1.chunk.js": "/mad-libs-react-site/static/js/3.6f8a43d1.chunk.js",
+    "static/js/3.6f8a43d1.chunk.js.map": "/mad-libs-react-site/static/js/3.6f8a43d1.chunk.js.map",
+    "index.html": "/mad-libs-react-site/index.html",
+    "static/css/main.5a0bcc32.chunk.css.map": "/mad-libs-react-site/static/css/main.5a0bcc32.chunk.css.map",
+    "static/js/2.51aded27.chunk.js.LICENSE.txt": "/mad-libs-react-site/static/js/2.51aded27.chunk.js.LICENSE.txt",
+    "static/media/celebration.e0bf46e9.svg": "/mad-libs-react-site/static/media/celebration.e0bf46e9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc6c8d0f.js",
+    "static/js/2.51aded27.chunk.js",
+    "static/css/main.5a0bcc32.chunk.css",
+    "static/js/main.05332760.chunk.js"
+  ]
+}
