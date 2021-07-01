@@ -1,0 +1,112 @@
+@import '../../globals.scss';
+
+
+@mixin navbar-btn{
+  @include size(40px, $sidebar-menu-height);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;       
+  right: 12px;
+  cursor: pointer;
+}
+
+
+.navbar-component{
+  @include bg-schema($dark, $light);
+  @include size(100%, $navbar-height);
+  @include flexbox(space-between);
+  @include padding-lateral;
+  font-size: 1em;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+
+  .close-btn{
+    display: none;
+
+  }
+
+  .links{
+    position: absolute;
+    left: 50%;
+    *{ &:last-child{
+        margin-left: 40px;
+      }
+    }    
+  }
+
+
+  .cta{
+    @include cta-primary;
+  }
+
+
+  @include media-query($mobile){
+    @include size(85%, 100vh);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 0px 0px 0px;
+    overflow: hidden;
+    transition: width 0.25s;
+    
+
+    &.closed{
+      width: 0px;
+      transition: width 0s;      
+    }
+
+    .close-btn{
+      @include navbar-btn;
+      top: 0px;
+    }
+
+    .links{
+      @include flexbox(flex-start, column);
+      position: unset;
+      margin: 40px 0px;
+      *{
+        margin: 20px 0px;
+        &:last-child{
+          margin: 10px 0px;
+        }
+      }      
+    }
+  }
+}
+
+
+.navbar-placeholder-component{
+  @include size(100%, $navbar-height);
+  @include media-query($mobile){
+    height: $sidebar-menu-height;
+  }
+}
+
+
+.sidebar-menu-component{
+  @include size(100%, $sidebar-menu-height);  
+  background-color: black;
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index: 8;
+ 
+  @include media-query($mobile){
+    display: block;
+
+    .menu-btn{
+      display: none;
+    }
+
+    &.closed{
+      .menu-btn{
+        @include navbar-btn;
+      }
+
+      .backdrop{
+        display: none;
+      }
+    }
+  }
+}

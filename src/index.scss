@@ -1,0 +1,138 @@
+@import './globals.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0px;
+  background-color: $body-background;
+  
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size: 48px;
+  font-weight: 900;
+  margin: 10px 0px;
+  @include media-query($tablet){
+    font-size: 42px;
+  }
+  @include media-query($mobile){
+    font-size: 24px;
+  }
+}
+
+h2{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0px;
+  @include media-query($tablet){
+    font-size: 26px;
+  }
+  @include media-query($mobile){
+    font-size: 22px;
+  }
+}
+
+p{
+  line-height: 1.8;
+  margin: 12px 0px;
+}
+
+main{
+  min-height: calc(100vh - #{$navbar-height});
+  @include media-query($mobile){
+    min-height: calc(100vh - #{$sidebar-menu-height});
+  }
+}
+
+.logo-component{
+  
+  span{
+    @include size(42px, 42px);
+    display: inline-block;
+    border-radius: $rounded;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 42px;
+    font-size: 20px;
+    font-weight: 500;
+    &:last-child{
+      margin-left: 8px;
+    }
+  }
+}
+
+
+.backdrop-component{
+  @include size(100vw, 100vh);
+  position: fixed;
+  top: 0px;
+  background-color: $dark;
+  opacity: 0.8;
+}
+
+
+.cover-section{
+  @include margin-lateral;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  h1{
+    width: 100%;
+  }
+
+  .text-container{
+    width: 50%;    
+    .cta-container{
+      margin-top: 25px;     
+      .cta{
+        @include cta-primary;
+      }
+    
+    }
+  }
+
+  .image{
+    width: 50%;
+    height: auto;
+  }
+
+  @include media-query($tablet){
+    h1{
+      order: 1;
+    }
+
+    .image{
+      width: 100%;
+      order: 2;
+    }
+
+    .text-container{
+      width: 100%;
+      order: 3;
+    }
+
+  }
+}
+
+.footer-component{
+  @include size(100%, 180px);
+  @include flexbox(space-between, column);
+  @include bg-schema($dark, $light);
+  padding-top: 40px;
+}
+
+.sobre-section{
+  
+}
