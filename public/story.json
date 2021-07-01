@@ -1,0 +1,9 @@
+{
+  "titulo": "UMA VISITANTE NA MINHA DESPENSA",
+  "palavras" : ["um adjetivo (no feminino)", "uma cor", "um cômodo", "nome de uma mulher famosa", "nome de um alimento", "nome de um animal"],  
+  "historia" : [
+    "Era um manhã muito {0}. Os passaros cantavam e o céu era {1}.",
+    "Eu estava no(a) {2} tranquilamente tomando o meu café da manhã, quando a campainha tocou. Era a minha nova vizinha {3} que queria um quilo de {4} emprestado.",
+    "Eu fui até a cozinha para pegar o quilo de {4}, mas quando eu abri o armário, havia um enorme {5} comendo toda a comida na minha despensa."
+  ]
+}

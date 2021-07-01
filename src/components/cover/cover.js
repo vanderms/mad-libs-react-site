@@ -13,7 +13,7 @@ export default function Cover(){
         <p>Durante o jogo, um jogador pede para o outro dizer  palavras para preencher os espaços em branco, revelando apenas a que categoria cada palavra pertence. </p>
         <p>Ao final, o texto é lido em voz alta. O resultado é muitas vezes uma história cômica e sem pé nem cabeça.</p>
         <div className="cta-container">
-          <Link className='cta' to='jogar'>
+          <Link className='cta' to='jogo'>
             JOGAR
           </Link>
         </div>       

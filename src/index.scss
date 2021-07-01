@@ -18,11 +18,11 @@ a{
 }
 
 h1{
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 900;
   margin: 10px 0px;
   @include media-query($tablet){
-    font-size: 42px;
+    font-size: 36px;
   }
   @include media-query($mobile){
     font-size: 24px;
@@ -31,13 +31,25 @@ h1{
 
 h2{
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 10px 0px;
   @include media-query($tablet){
     font-size: 26px;
   }
   @include media-query($mobile){
     font-size: 22px;
+  }
+}
+
+h3{
+  font-size: 22px;
+  font-weight: 900;
+  margin: 10px 0px;
+  @include media-query($tablet){
+    font-size: 20px;
+  }
+  @include media-query($mobile){
+    font-size: 20px;
   }
 }
 
@@ -133,6 +145,106 @@ main{
   padding-top: 40px;
 }
 
-.sobre-section{
-  
+.sobre-section{ 
+  @include margin-lateral;
+  padding: 80px 10%;
+  @include media-query($tablet){
+    padding: 80px 5%;
+  }
+  @include media-query($mobile){
+    padding: 80px 0px;
+  }
+
+  .contato-container{
+    margin-top: 40px;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 12px 0px;
+
+      span{
+        margin-left: 20px;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+.jogo-section{
+  @include margin-lateral;
+
+  form {
+    @include flexbox(flex-start, column);
+    width: 40%;
+    margin: auto;
+    padding-top: 160px;
+
+    @include media-query($tablet){
+      width: 60%;
+    }
+
+    @include media-query($mobile){
+      width: 90%;
+    }
+
+    @include media-query($small-mobile){
+      width: 95%;
+    }
+    label{
+      text-align: center;
+      line-height: 1.6;
+    }
+
+
+    input[type=text]{
+      padding: 8px 12px;
+      margin-top: 10px;
+      width: 100%;
+      border-radius: $rounded;
+      line-height: 1.6;
+      border: 1px solid #888;
+    }
+
+    input[type=submit]{
+      @include cta-primary;
+      background-color: $success;
+      margin-top: 20px;
+    }    
+  }
+}
+
+.historia-section{
+  @include flexbox(flex-start, column);
+  width: 40%;
+  margin: auto;
+  padding-top: 80px;
+
+  @include media-query($tablet){
+    width: 60%;
+  }
+
+  @include media-query($mobile){
+    width: 90%;
+  }
+
+  @include media-query($small-mobile){
+    width: 95%;
+  }
+
+  h3{
+    text-align: center;
+  }
+  .text-container{
+    span{
+      color: #482880;
+      font-weight: 600;
+    }
+  }
+
+  .cta-primary{
+    @include cta-primary;   
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
 }
